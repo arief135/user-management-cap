@@ -1,2 +1,2 @@
 
-using from './admin/annotations';
+using from './admin-user/annotations';

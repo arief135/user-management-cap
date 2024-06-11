@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "admin",
+    "id": "adminuser",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.13.6",
-      "toolsId": "a428d87f-7280-4ae3-97ae-9d46fec25365"
+      "toolsId": "2e7d88f3-f750-426a-bfbc-3243424cd9c2"
     },
     "dataSources": {
       "mainService": {
@@ -22,6 +22,19 @@
         "settings": {
           "annotations": [],
           "odataVersion": "4.0"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "Admin-manageUsers": {
+          "semanticObject": "Admin",
+          "action": "manageUsers",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
         }
       }
     }
@@ -61,7 +74,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "admin.i18n.i18n"
+          "bundleName": "adminuser.i18n.i18n"
         }
       },
       "": {

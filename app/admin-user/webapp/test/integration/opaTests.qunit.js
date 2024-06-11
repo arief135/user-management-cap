@@ -1,15 +1,15 @@
 sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
-        'admin/test/integration/FirstJourney',
-		'admin/test/integration/pages/UsersList',
-		'admin/test/integration/pages/UsersObjectPage'
+        'adminuser/test/integration/FirstJourney',
+		'adminuser/test/integration/pages/UsersList',
+		'adminuser/test/integration/pages/UsersObjectPage'
     ],
     function(JourneyRunner, opaJourney, UsersList, UsersObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
-            launchUrl: sap.ui.require.toUrl('admin') + '/index.html'
+            launchUrl: sap.ui.require.toUrl('adminuser') + '/index.html'
         });
 
        

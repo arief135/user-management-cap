@@ -12,6 +12,7 @@
   "devDependencies": {
     "@cap-js/sqlite": "^1.7.1",
     "@sap/eslint-plugin-cds": "^3",
+    "cds-swagger-ui-express": "^0.8.0",
     "eslint": "^9"
   },
   "scripts": {

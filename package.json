@@ -7,7 +7,8 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
-    "express": "^4"
+    "express": "^4",
+    "@sap/xssec": "^3"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1.7.1",
@@ -25,8 +26,8 @@
     "watch-login": "cds watch --open login/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "cds": {
-    "[development]": {
-      "requires": {
+    "requires": {
+      "[development]": {
         "db": {
           "kind": "sqlite",
           "credentials": {
@@ -37,6 +38,9 @@
           "kind": "basic",
           "impl": "srv/basic-auth.ts"
         }
+      },
+      "[hybrid]": {
+        "auth": "xsuaa"
       }
     }
   },

@@ -1,6 +1,6 @@
 using {id.apnv.usermanagement as my} from '../db/schema';
 
-service UserService @(requires: 'authenticated-user') {
+service UserService @(requires: 'Admin') {
   entity Users as projection on my.Users;
 }
 

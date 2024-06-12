@@ -1,0 +1,44 @@
+<mvc:View
+    xmlns:layout="sap.ui.layout"
+    controllerName="login.controller.Login"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <FlexBox id="_IDGenFlexBox1">
+                <layout:VerticalLayout id="_IDGenVerticalLayout1">
+                    <Label
+                        id="_IDGenLabel1"
+                        text="Username"
+                    />
+                    <Input
+                        id="_IDGenInput1"
+                        submit="login"
+                        value="{/username}"
+                    />
+
+                    <Label
+                        id="_IDGenLabel2"
+                        text="Password"
+                    />
+                    <Input
+                        id="_IDGenInput2"
+                        submit="login"
+                        value="{/password}"
+                    />
+
+                    <Button
+                        id="_IDGenButton1"
+                        text="Login"
+                        press="login"
+                    />
+                </layout:VerticalLayout>
+            </FlexBox>
+        </content>
+    </Page>
+</mvc:View>

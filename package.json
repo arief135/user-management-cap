@@ -44,7 +44,6 @@
     "app/*"
   ],
   "sapux": [
-    "app/admin-user",
     "app/login",
     "app/admin-user"
   ]

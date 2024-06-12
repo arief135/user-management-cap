@@ -21,7 +21,8 @@
   "scripts": {
     "start": "cds-serve",
     "watch:ts": "cds-ts watch",
-    "watch-admin-user": "cds watch --open adminuser/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-admin-user": "cds watch --open adminuser/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-project1": "cds watch --open project1/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "cds": {
     "requires": {
@@ -41,6 +42,7 @@
     "app/*"
   ],
   "sapux": [
-    "app/admin-user"
+    "app/admin-user",
+    "app/project1"
   ]
 }
